@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    /*TIPOGRAPHY*/
+    --title: 42px;
+    --subtitle: 32px;
+    --second-subtitle: 25px;
+    --web-text: 20px;
+    --paragraph: 16px;
+    --small-text: 12px;
+
+    /*COLOR PALETTE*/
+    --primary-color: #000218;
+    --red-marvel-color: #E74040;
+    --dark-blue-color: #252B42;
+    --light-gray-color: #737373;
+    --dark-gray-color: #323030;
+}
+
