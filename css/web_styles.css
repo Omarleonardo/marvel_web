@@ -1,10 +1,15 @@
 @import url(styles.css);
 
 /* HEADER */
+.logo {
+    padding: 10px 30px;
+    img{
+        width: 40%;
+    }
+}
 
 
 /* INFORMATIVE BANNER  */
-
 .banner {
     display: flex;
     align-items: flex-end;
@@ -90,6 +95,16 @@
 
 /* RESPONSIVE TABLET  */
 @media (min-width: 744px) {
+
+/* HEADER */
+    .logo {
+        padding: 40px 120px;
+        img{
+            width: 35%;
+        }
+    }
+
+/* INFORMATIVE BANNER  */
     .main_title {
         height: 286.5px;
         width: 470px;
@@ -114,7 +129,16 @@
 
 /* RESPONSIVE DESKTOP  */
 @media (min-width: 1200px) {
+
+/* HEADER */
+    .logo {
+        padding: 58px 80px;
+        img{
+            width: 147.42px;
+        }
+    }
     
+/* INFORMATIVE BANNER  */
     .main_title {
         height: 382px;
         width: 573px;
