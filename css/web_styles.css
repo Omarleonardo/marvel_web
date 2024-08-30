@@ -23,7 +23,6 @@ header {
     }
 }
 
-
 /* INFORMATIVE BANNER  */
 .banner {
     margin: 0;
@@ -143,6 +142,80 @@ header {
     }
   }
 }
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: var(--dark-gray-color);
+}
+
+.footer_row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.social_media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 5px;
+}
+
+/* RESPONSIVE TABLET */
+@media (min-width: 744px) {
+  /* HEADER */
+
+  /* INFORMATIVE BANNER  */
+
+  /* DESCRIPTIVE CARDS OF THE CHARACTERS */
+
+  /* PARTNER BRANDS */
+  .partner_brands {
+    height: 16rem;
+    margin: 3rem 0 3rem 0;
+
+    h2 {
+      font-size: var(--title);
+    }
+
+    h3 {
+      font-size: var(--second-subtitle);
+    }
+
+    .main_image_container {
+        margin-top: 2rem;
+      gap: 2rem;
+    }
+  }
+
+  /* FOOTER */
+}
+
+/* RESPONSIVE DESKTOP  */
+@media (min-width: 1200px) {
+  /* HEADER */
+
+  /* INFORMATIVE BANNER  */
+
+  /* DESCRIPTIVE CARDS OF THE CHARACTERS */
+
+  /* PARTNER BRANDS */
+  .partner_brands {
+    .main_image_container {
+        margin-top: 3rem;
+      gap: 3rem;
+    }
+  }
+
 
 /* FOOTER */
 .footer {
@@ -298,4 +371,19 @@ h6 {
     .social_network {
       padding-right: 250px;
     }
+
+  /* FOOTER */
+  .footer_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .rights_reserved {
+    padding: 15px 150px;
+  }
+
+  .social_network {
+    padding-right: 250px;
+  }
 }
