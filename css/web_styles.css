@@ -17,7 +17,6 @@
     font-size: var(--second-subtitle);
     color: var(--primary-color);
     padding: 2rem;
-
   }
 
   .main_container_cards {
@@ -135,6 +134,20 @@
   /* INFORMATIVE BANNER  */
 
   /* DESCRIPTIVE CARDS OF THE CHARACTERS */
+  .personal_cards {
+    h2 {
+      font-size: var(--subtitle);
+      padding: 0 3rem;
+    }
+
+    .main_container_cards {
+      gap: 1rem;
+
+      .container_overflow-cards {
+        padding: 0.7rem;
+      }
+    }
+  }
 
   /* PARTNER BRANDS */
   .partner_brands {
@@ -165,6 +178,39 @@
   /* INFORMATIVE BANNER  */
 
   /* DESCRIPTIVE CARDS OF THE CHARACTERS */
+  .personal_cards {
+    height: 30rem;    
+    padding:6rem ;
+    /* background-color: blue; */
+    align-items: center;
+
+
+    h2 {
+      /* background-color: pink; */
+      padding: 2rem 0;
+      width: 82%;
+    }
+    .main_container_cards {
+      width: 90%;
+      height: 100%;
+
+      .container_overflow-cards {
+
+        .container_cards {
+          gap: 2rem;
+
+          .hero-card {
+            width: 320px;
+
+            .container-img {
+              width: 5rem;
+              height: 5rem;
+            }
+          }
+        }
+      }
+    }
+  }
 
   /* PARTNER BRANDS */
   .partner_brands {
