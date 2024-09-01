@@ -1,0 +1,94 @@
+@import url(styles.css);
+
+.body_store {
+    background-color: #FFF;
+}
+
+/* Article boxes */
+h3 {
+    color: var(--primary-color);
+    font-weight: 600;
+    size: 24px;
+}
+
+p {
+    color: var(--primary-color);
+}
+
+.back {
+    width: 76px;
+    height: 27px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.bxs-shopping-bag {
+    font-size: var(--second-subtitle);
+    color: var(--primary-color);
+}
+
+.item_boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.box_item {
+    width: 360px;
+    height: 600px;
+}
+
+.inner_item {
+    width: 360px;
+    height: 400px;
+    background-color: var(--super-light-gray-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 80%;
+    }
+}
+
+img {
+    transition: all 0.2s ease-in-out;
+
+}
+img:hover {
+    transform: scale(1.1);
+}
+
+#guantlet_image {
+    width: 40%;
+    background-color: var(--super-light-gray-color);
+}
+
+.detail_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* background-color: #fff; */
+    height: 200px;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+#button_article {
+    height: 64px;
+    width: 295px;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    font-family: "Lato";
+    color: #FFF;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    background-color: var(--red-marvel-color);
+}
+
+#button_article:hover {
+    transform: scale(1.1);
+}
