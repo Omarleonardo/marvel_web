@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel's store</title>
+
+    <link rel="stylesheet" href="css/web_styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/store_styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="body_store">
+    <div class="main_container">
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="public/images/LogoMarvel.png" alt="logo_marvel">
+                </a>
+            </div>
+            <i class='bx bxs-shopping-bag'></i>
+
+            <div class=container_icon>
+                <div class="container_cart_icon">
+                    <i class='bx bxs-shopping-bag'></i>
+                    <div class="count_products">
+                        <span id="counter_products"></span>
+                    </div>
+                </div>
+
+                <div class="container_cart_products hidden_cart">
+                    <div class="product">
+                        <div class="cart_product">
+                            <div class="info_cart_product">
+                                <span class="cantidad_product_cart">1</span>
+                                <p class="titulo_product_cart">Guante de Thanos</p>
+                                <span class="price_product_cart">$80</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Articles boxes-->
+        <section>
+            <div class="back">
+                <a href="index.html">
+                    <p>← Back</p>
+                </a>
+            </div>
+            <div class="item_boxes">
+                <div class="box_item">
+                    <div class="inner_item">
+                        <img id="guantlet_image" src="public/images/guantlet_store.png" alt="infinity_guantlet">
+                    </div>
+                    <div class="detail_item">
+                        <h3>Guante de Thanos</h3>
+                        <p>$20</p>
+                        <button id="button_article">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="box_item">
+                    <div class="inner_item">
+                        <img id="funko" src="public/images/wolverine.png" alt="wolverine">
+                    </div>
+                    <div class="detail_item">
+                        <h3>Wolverine</h3>
+                        <p>$26</p>
+                        <button id="button_article">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="box_item">
+                    <div class="inner_item">
+                        <img id="funko" src="public/images/spiderman.png" alt="spiderman">
+                    </div>
+                    <div class="detail_item">
+                        <h3>Spider-Man</h3>
+                        <p>$26</p>
+                        <button id="button_article">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="box_item">
+                    <div class="inner_item">
+                        <img id="funko" src="public/images/deadpool.png" alt="deadpool">
+                    </div>
+                    <div class="detail_item">
+                        <h3>Deadpool</h3>
+                        <p>$26</p>
+                        <button id="button_article">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="box_item">
+                    <div class="inner_item">
+                        <img id="funko" src="public/images/black-panter.png" alt="black-panter">
+                    </div>
+                    <div class="detail_item">
+                        <h3>Black Panther</h3>
+                        <p>$26</p>
+                        <button id="button_article">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer">
+                <div class="footer_container">
+                    <div class="footer_row">
+                        <div class="rights_reserved">
+                            <h6>Made With Love By Frontend All Right Reserved </h6>
+                        </div>
+                        <div class="social_network">
+                            <div class="social_media">
+                                <img src="public/images/facebook.png" alt="facebook">
+                                <img src="public/images/instagram.png" alt="instagram">
+                                <img src="public/images/twitter.png" alt="twitter">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

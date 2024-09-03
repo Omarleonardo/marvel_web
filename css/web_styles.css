@@ -74,7 +74,13 @@ header {
     font-size: 14px;
     color: #FFF;
     font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
     background-color: var(--red-marvel-color);
+}
+
+#button_shop:hover {
+  transform: scale(1.1);
 }
 
 #button_cart {
@@ -84,9 +90,14 @@ header {
     font-size: 14px;
     color: var(--red-marvel-color);
     font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
     border: 2px solid var(--red-marvel-color);
     background-color: transparent;
+}
 
+#button_cart:hover {
+  transform: scale(1.1);
 }
 
 .guantlet {
@@ -253,6 +264,7 @@ h6 {
 
   /* INFORMATIVE BANNER  */
 
+
   /* DESCRIPTIVE CARDS OF THE CHARACTERS */
   .personal_cards {
     h2 {
@@ -373,6 +385,7 @@ h6 {
 /* HEADER */
 
   /* INFORMATIVE BANNER  */
+
   .main_title {
     height: 286.5px;
     width: 470px;
@@ -403,8 +416,6 @@ h6 {
     justify-content: center;
 }
 
-}
-
   /* DESCRIPTIVE CARDS OF THE CHARACTERS */
 
   /* PARTNER BRANDS */
@@ -424,54 +435,56 @@ h6 {
         margin-top: 2rem;
       gap: 2rem;
     }
-    /* FOOTER */
   }
 
+  /* FOOTER */
+}
 
 /* RESPONSIVE DESKTOP  */
 @media (min-width: 1200px) {
+  /* HEADER */
 
-/* HEADER */
-    
-/* INFORMATIVE BANNER  */
-    .container_fluid {
-      width: 100%;
-      height: 700px;
+  /* INFORMATIVE BANNER  */
+  .container_fluid {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main_title {
+      height: 382px;
+      width: 573px;
+  }
+  
+  .title_buttons{
+      padding-top: 40px;
+  }
+  
+  #headline {
+      font-size: 58px;
+      font-weight: 700;
+  }
+  
+  #sub_headline {
+      font-size: 20px;
+      font-weight: 400;
+      padding-top: 20px;
+  }
+  
+  .guantlet {
+      width: 50%;
       display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-    }
+      justify-content: center; 
+      margin-bottom: 0px;
+      img {
+        width: 100%;
+      }
+  }
 
-    .main_title {
-        height: 382px;
-        width: 573px;
-    }
-    
-    .title_buttons{
-        padding-top: 40px;
-    }
-    
-    #headline {
-        font-size: 58px;
-        font-weight: 700;
-    }
-    
-    #sub_headline {
-        font-size: 20px;
-        font-weight: 400;
-        padding-top: 20px;
-    }
-    
-    .guantlet {
-        width: 50%;
-        display: flex;
-        justify-content: center; 
-        margin-bottom: 0px;
-        img {
-          width: 100%;
-        }
-    }
+  /* DESCRIPTIVE CARDS OF THE CHARACTERS */
 
   /* PARTNER BRANDS */
   .partner_brands {
@@ -481,20 +494,35 @@ h6 {
     }
   }
 
-  /* FOOTER */
-    .footer_row {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
 
-    .rights_reserved {
-      padding: 15px 150px;
-    }
-
-    .social_network {
-      padding-right: 250px;
-    }
-
-  /* FOOTER */
+/* FOOTER */
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: var(--dark-gray-color);
 }
+
+
+.footer_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rights_reserved {
+  padding: 15px 150px;
+}
+
+.social_network {
+  padding-right: 250px;
+}
+  
+.social_media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 5px;
+}
+
+
