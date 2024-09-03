@@ -16,13 +16,45 @@
 <body>
 
     <div class="main_container">
-        <header></header>
+        <header>
+            <div class="logo">
+                <img src="public/images/LogoMarvel.png" alt="logo_marvel">
+            </div>
+            <a>Shop</a>
+            <i class='bx bx-cart-alt'></i>
+        </header>
 
         <!-- INFORMATIVE BANNER -->
-        <section class="banner"></section>
+        <section class="banner">
+            <div class="container_fluid">
+                <div class="main_title">
+                    <h1 id="headline">Thanos Infinity Gauntlet Action Figure</h1>
+                    <h4 id="sub_headline">Marvel Merchandise</h4>
+                    <div class="title_buttons">
+                        <button id="button_shop">Shop</button>
+                        <button id="button_cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="guantlet">
+                    <img class="infinity_guantlet_image" src="public/images/guantelete-del-infinito-marvel2.png"
+                        alt="infinity_guantlet">
+                </div>
+            </div>
+
+        </section>
 
         <!-- DESCRIPTIVE CARDS OF THE CHARACTERS -->
-        <section class="personal_cards"></section>
+        <section class="personal_cards">
+            <h2>Our Iconic Heroes</h2>
+            <!-- sección cartas -->
+            <div class="main_container_cards">
+                <i id="button_left" class='bx bx-chevron-left'></i>
+                <div class="container_overflow-cards">
+                    <div id="container_cards" class="container_cards"></div>
+                </div>
+                <i id="button_right" class='bx bx-chevron-right'></i>
+            </div>
+        </section>
 
 
         <!-- PARTNER BRANDS -->
@@ -64,6 +96,7 @@
         </footer>
     </div>
 
+    <script src="/js/logic-cards.js"></script>
 </body>
 
 </html>

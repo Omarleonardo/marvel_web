@@ -17,10 +17,12 @@
 
     /*COLOR PALETTE*/
     --primary-color: #000218;
+    --white-color: #FFF;
     --red-marvel-color: #E74040;
     --dark-blue-color: #252B42;
     --light-gray-color: #737373;
     --dark-gray-color: #323030;
+    --grey-background: #f5eeee;
 }
 
 body{

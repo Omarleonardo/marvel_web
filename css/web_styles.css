@@ -2,9 +2,182 @@
 
 /* HEADER */
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  height: 80px;
+  width: 100%;
+  padding: 10px 30px;
+}
+
+.bx-cart-alt {
+  font-size: var(--second-subtitle);
+}
+
+.logo {
+  width: 100px;
+    img{
+        width: 100%;
+    }
+}
+
 /* INFORMATIVE BANNER  */
+.banner {
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container_fluid {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: -100px;
+}
+
+.main_title {
+    height: 191px;
+    width: 286.5px;
+}
+
+.title_buttons{
+    display: flex;
+    align-items: flex-end;
+    padding-top: 40px;
+    gap: 10px;
+}
+
+#headline {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+#sub_headline {
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+#button_shop {
+    height: 52px;
+    width: 119px;
+    padding: 15px 40px 15px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: 700;
+    background-color: var(--red-marvel-color);
+}
+
+#button_cart {
+    height: 52px;
+    width: 167px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: var(--red-marvel-color);
+    font-weight: 700;
+    border: 2px solid var(--red-marvel-color);
+    background-color: transparent;
+
+}
+
+.guantlet {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 0px;
+    overflow: hidden;
+    img {
+        width: 100%;
+    }
+}
 
 /* DESCRIPTIVE CARDS OF THE CHARACTERS */
+.personal_cards {
+  background-color: var(--grey-background);
+  width: 100%;
+  height: 27rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    font-size: var(--second-subtitle);
+    color: var(--primary-color);
+    padding: 2rem;
+  }
+
+  .main_container_cards {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    margin-bottom: 3rem;
+
+    i {
+      display: flex;
+      align-items: center;
+      font-size: var(--second-subtitle);
+      color: var(--primary-color);
+    }
+    .container_overflow-cards {
+      overflow: hidden;
+      width: 100%;
+
+      .container_cards {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 1rem 0;
+        transition: transform 0.3s ease-in-out;
+
+        .hero-card {
+          background-color: var(--white-color);
+          width: 200px;
+          /* height: 50%; */
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          padding: 1rem;
+          box-shadow: 0.5rem 0.5rem 0.2rem 0 rgba(79, 79, 79, 0.242);
+          border-radius: 0.5rem;
+
+          .container-img {
+            width: 4rem;
+            height: 4rem;
+            overflow: hidden;
+            border-radius: 100%;
+
+            img {
+              width: 100%;
+              object-fit: cover;
+            }
+          }
+          p {
+            color: #000;
+          }
+
+          /* .title{
+
+          } */
+          .description {
+            font-size: var(--small-text);
+          }
+        }
+      }
+    }
+  }
+}
 
 /* PARTNER BRANDS */
 .partner_brands {
@@ -81,6 +254,158 @@ h6 {
   /* INFORMATIVE BANNER  */
 
   /* DESCRIPTIVE CARDS OF THE CHARACTERS */
+  .personal_cards {
+    h2 {
+      font-size: var(--subtitle);
+      padding: 0 3rem;
+    }
+
+    .main_container_cards {
+      gap: 1rem;
+
+      .container_overflow-cards {
+        padding: 0.7rem;
+      }
+    }
+  }
+
+  /* PARTNER BRANDS */
+  .partner_brands {
+    height: 16rem;
+    margin: 3rem 0 3rem 0;
+
+    h2 {
+      font-size: var(--title);
+    }
+
+    h3 {
+      font-size: var(--second-subtitle);
+    }
+
+    .main_image_container {
+      margin-top: 2rem;
+      gap: 2rem;
+    }
+  }
+
+  /* FOOTER */
+}
+
+/* RESPONSIVE DESKTOP  */
+@media (min-width: 1200px) {
+  /* HEADER */
+
+  /* INFORMATIVE BANNER  */
+
+  /* DESCRIPTIVE CARDS OF THE CHARACTERS */
+  .personal_cards {
+    height: 30rem;    
+    padding:6rem ;
+    /* background-color: blue; */
+    align-items: center;
+
+
+    h2 {
+      /* background-color: pink; */
+      padding: 2rem 0;
+      width: 82%;
+    }
+    .main_container_cards {
+      width: 90%;
+      height: 100%;
+
+      .container_overflow-cards {
+
+        .container_cards {
+          gap: 2rem;
+
+          .hero-card {
+            width: 320px;
+
+            .container-img {
+              width: 5rem;
+              height: 5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* PARTNER BRANDS */
+  .partner_brands {
+    .main_image_container {
+      margin-top: 3rem;
+      gap: 3rem;
+    }
+  }
+
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: var(--dark-gray-color);
+}
+
+.footer_row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.social_media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 5px;
+}
+
+/* RESPONSIVE TABLET */
+@media (min-width: 744px) {
+/* HEADER */
+
+  /* INFORMATIVE BANNER  */
+  .main_title {
+    height: 286.5px;
+    width: 470px;
+  }
+
+  .title_buttons{
+    display: flex;
+    align-items: flex-end;
+  }
+
+  #headline {
+    font-size: 58px;
+    font-weight: 700;
+  }
+
+  #sub_headline {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 20px;
+  }
+
+  .container_fluid {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+}
+
+  /* DESCRIPTIVE CARDS OF THE CHARACTERS */
 
   /* PARTNER BRANDS */
   .partner_brands {
@@ -99,18 +424,54 @@ h6 {
         margin-top: 2rem;
       gap: 2rem;
     }
+    /* FOOTER */
   }
 
-  /* FOOTER */
-}
 
 /* RESPONSIVE DESKTOP  */
 @media (min-width: 1200px) {
-  /* HEADER */
 
-  /* INFORMATIVE BANNER  */
+/* HEADER */
+    
+/* INFORMATIVE BANNER  */
+    .container_fluid {
+      width: 100%;
+      height: 700px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
 
-  /* DESCRIPTIVE CARDS OF THE CHARACTERS */
+    .main_title {
+        height: 382px;
+        width: 573px;
+    }
+    
+    .title_buttons{
+        padding-top: 40px;
+    }
+    
+    #headline {
+        font-size: 58px;
+        font-weight: 700;
+    }
+    
+    #sub_headline {
+        font-size: 20px;
+        font-weight: 400;
+        padding-top: 20px;
+    }
+    
+    .guantlet {
+        width: 50%;
+        display: flex;
+        justify-content: center; 
+        margin-bottom: 0px;
+        img {
+          width: 100%;
+        }
+    }
 
   /* PARTNER BRANDS */
   .partner_brands {
@@ -121,17 +482,19 @@ h6 {
   }
 
   /* FOOTER */
-  .footer_row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+    .footer_row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
 
-  .rights_reserved {
-    padding: 15px 150px;
-  }
+    .rights_reserved {
+      padding: 15px 150px;
+    }
 
-  .social_network {
-    padding-right: 250px;
-  }
+    .social_network {
+      padding-right: 250px;
+    }
+
+  /* FOOTER */
 }
