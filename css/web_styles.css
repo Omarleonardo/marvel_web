@@ -2,7 +2,103 @@
 
 /* HEADER */
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  height: 80px;
+  width: 100%;
+  padding: 10px 30px;
+}
+
+.bx-cart-alt {
+  font-size: var(--second-subtitle);
+}
+
+.logo {
+  width: 100px;
+    img{
+        width: 100%;
+    }
+}
+
 /* INFORMATIVE BANNER  */
+.banner {
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container_fluid {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: -100px;
+}
+
+.main_title {
+    height: 191px;
+    width: 286.5px;
+}
+
+.title_buttons{
+    display: flex;
+    align-items: flex-end;
+    padding-top: 40px;
+    gap: 10px;
+}
+
+#headline {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+#sub_headline {
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+#button_shop {
+    height: 52px;
+    width: 119px;
+    padding: 15px 40px 15px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: 700;
+    background-color: var(--red-marvel-color);
+}
+
+#button_cart {
+    height: 52px;
+    width: 167px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: var(--red-marvel-color);
+    font-weight: 700;
+    border: 2px solid var(--red-marvel-color);
+    background-color: transparent;
+
+}
+
+.guantlet {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 0px;
+    overflow: hidden;
+    img {
+        width: 100%;
+    }
+}
 
 /* DESCRIPTIVE CARDS OF THE CHARACTERS */
 .personal_cards {
@@ -125,6 +221,31 @@
 }
 
 /* FOOTER */
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: var(--dark-gray-color);
+}
+
+.footer_row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.social_media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 5px;
+}
 
 /* RESPONSIVE TABLET */
 @media (min-width: 744px) {
@@ -218,6 +339,162 @@
       gap: 3rem;
     }
   }
+
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: var(--dark-gray-color);
+}
+
+.footer_row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.social_media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 5px;
+}
+
+/* RESPONSIVE TABLET */
+@media (min-width: 744px) {
+/* HEADER */
+
+  /* INFORMATIVE BANNER  */
+  .main_title {
+    height: 286.5px;
+    width: 470px;
+  }
+
+  .title_buttons{
+    display: flex;
+    align-items: flex-end;
+  }
+
+  #headline {
+    font-size: 58px;
+    font-weight: 700;
+  }
+
+  #sub_headline {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 20px;
+  }
+
+  .container_fluid {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+}
+
+  /* DESCRIPTIVE CARDS OF THE CHARACTERS */
+
+  /* PARTNER BRANDS */
+  .partner_brands {
+    height: 16rem;
+    margin: 3rem 0 3rem 0;
+
+    h2 {
+      font-size: var(--title);
+    }
+
+    h3 {
+      font-size: var(--second-subtitle);
+    }
+
+    .main_image_container {
+        margin-top: 2rem;
+      gap: 2rem;
+    }
+    /* FOOTER */
+  }
+
+
+/* RESPONSIVE DESKTOP  */
+@media (min-width: 1200px) {
+
+/* HEADER */
+    
+/* INFORMATIVE BANNER  */
+    .container_fluid {
+      width: 100%;
+      height: 700px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .main_title {
+        height: 382px;
+        width: 573px;
+    }
+    
+    .title_buttons{
+        padding-top: 40px;
+    }
+    
+    #headline {
+        font-size: 58px;
+        font-weight: 700;
+    }
+    
+    #sub_headline {
+        font-size: 20px;
+        font-weight: 400;
+        padding-top: 20px;
+    }
+    
+    .guantlet {
+        width: 50%;
+        display: flex;
+        justify-content: center; 
+        margin-bottom: 0px;
+        img {
+          width: 100%;
+        }
+    }
+
+  /* PARTNER BRANDS */
+  .partner_brands {
+    .main_image_container {
+        margin-top: 3rem;
+      gap: 3rem;
+    }
+  }
+
+  /* FOOTER */
+    .footer_row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .rights_reserved {
+      padding: 15px 150px;
+    }
+
+    .social_network {
+      padding-right: 250px;
+    }
 
   /* FOOTER */
 }
