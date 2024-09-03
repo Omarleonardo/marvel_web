@@ -101,6 +101,83 @@ header {
 }
 
 /* DESCRIPTIVE CARDS OF THE CHARACTERS */
+.personal_cards {
+  background-color: var(--grey-background);
+  width: 100%;
+  height: 27rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    font-size: var(--second-subtitle);
+    color: var(--primary-color);
+    padding: 2rem;
+  }
+
+  .main_container_cards {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    margin-bottom: 3rem;
+
+    i {
+      display: flex;
+      align-items: center;
+      font-size: var(--second-subtitle);
+      color: var(--primary-color);
+    }
+    .container_overflow-cards {
+      overflow: hidden;
+      width: 100%;
+
+      .container_cards {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 1rem 0;
+        transition: transform 0.3s ease-in-out;
+
+        .hero-card {
+          background-color: var(--white-color);
+          width: 200px;
+          /* height: 50%; */
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          padding: 1rem;
+          box-shadow: 0.5rem 0.5rem 0.2rem 0 rgba(79, 79, 79, 0.242);
+          border-radius: 0.5rem;
+
+          .container-img {
+            width: 4rem;
+            height: 4rem;
+            overflow: hidden;
+            border-radius: 100%;
+
+            img {
+              width: 100%;
+              object-fit: cover;
+            }
+          }
+          p {
+            color: #000;
+          }
+
+          /* .title{
+
+          } */
+          .description {
+            font-size: var(--small-text);
+          }
+        }
+      }
+    }
+  }
+}
 
 /* PARTNER BRANDS */
 .partner_brands {
@@ -177,6 +254,20 @@ h6 {
   /* INFORMATIVE BANNER  */
 
   /* DESCRIPTIVE CARDS OF THE CHARACTERS */
+  .personal_cards {
+    h2 {
+      font-size: var(--subtitle);
+      padding: 0 3rem;
+    }
+
+    .main_container_cards {
+      gap: 1rem;
+
+      .container_overflow-cards {
+        padding: 0.7rem;
+      }
+    }
+  }
 
   /* PARTNER BRANDS */
   .partner_brands {
@@ -192,7 +283,7 @@ h6 {
     }
 
     .main_image_container {
-        margin-top: 2rem;
+      margin-top: 2rem;
       gap: 2rem;
     }
   }
@@ -207,11 +298,44 @@ h6 {
   /* INFORMATIVE BANNER  */
 
   /* DESCRIPTIVE CARDS OF THE CHARACTERS */
+  .personal_cards {
+    height: 30rem;    
+    padding:6rem ;
+    /* background-color: blue; */
+    align-items: center;
+
+
+    h2 {
+      /* background-color: pink; */
+      padding: 2rem 0;
+      width: 82%;
+    }
+    .main_container_cards {
+      width: 90%;
+      height: 100%;
+
+      .container_overflow-cards {
+
+        .container_cards {
+          gap: 2rem;
+
+          .hero-card {
+            width: 320px;
+
+            .container-img {
+              width: 5rem;
+              height: 5rem;
+            }
+          }
+        }
+      }
+    }
+  }
 
   /* PARTNER BRANDS */
   .partner_brands {
     .main_image_container {
-        margin-top: 3rem;
+      margin-top: 3rem;
       gap: 3rem;
     }
   }
@@ -373,17 +497,4 @@ h6 {
     }
 
   /* FOOTER */
-  .footer_row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .rights_reserved {
-    padding: 15px 150px;
-  }
-
-  .social_network {
-    padding-right: 250px;
-  }
 }
