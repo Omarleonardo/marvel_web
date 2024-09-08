@@ -21,7 +21,7 @@ const countProducts = document.querySelector("#counter_products");
 const cartEmpty = document.querySelector(".cart_empty");
 const cartTotal = document.querySelector(".cart_total");
 
-console.log(listProducts)
+// console.log(listProducts)
 
 listProducts.addEventListener("click", e => {
     if (e.target.classList.contains("button_article")) {

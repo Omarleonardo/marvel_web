@@ -9,12 +9,15 @@
     <link rel="stylesheet" href="/css/web_styles.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/store_styles.css">
+    <link rel="stylesheet" href="info.html">
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body class="body_store">
@@ -63,57 +66,8 @@
                 <p>← Back</p>
             </a>
         </div>
-        <div class="item_boxes">
-            <div class="box_item">
-                <div class="inner_item">
-                    <img id="guantlet_image" src="/public/images/guantlet_store.png" alt="infinity_guantlet">
-                </div>
-                <div class="detail_item">
-                    <h3>Guante de Thanos</h3>
-                    <p>$20</p>
-                    <button class="button_article">Add to Cart</button>
-                </div>
-            </div>
-            <div class="box_item">
-                <div class="inner_item">
-                    <img id="funko" src="/public/images/wolverine.png" alt="wolverine">
-                </div>
-                <div class="detail_item">
-                    <h3>Wolverine</h3>
-                    <p>$26</p>
-                    <button class="button_article">Add to Cart</button>
-                </div>
-            </div>
-            <div class="box_item">
-                <div class="inner_item">
-                    <img id="funko" src="/public/images/spiderman.png" alt="spiderman">
-                </div>
-                <div class="detail_item">
-                    <h3>Spider-Man</h3>
-                    <p>$26</p>
-                    <button class="button_article">Add to Cart</button>
-                </div>
-            </div>
-            <div class="box_item">
-                <div class="inner_item">
-                    <img id="funko" src="/public/images/deadpool.png" alt="deadpool">
-                </div>
-                <div class="detail_item">
-                    <h3>Deadpool</h3>
-                    <p>$26</p>
-                    <button class="button_article">Add to Cart</button>
-                </div>
-            </div>
-            <div class="box_item">
-                <div class="inner_item">
-                    <img id="funko" src="/public/images/black-panter.png" alt="black-panter">
-                </div>
-                <div class="detail_item">
-                    <h3>Black Panther</h3>
-                    <p>$26</p>
-                    <button class="button_article">Add to Cart</button>
-                </div>
-            </div>
+
+        <div class="item_boxes" id="item_boxes">
         </div>
     </section>
 
@@ -135,7 +89,9 @@
             </div>
         </div>
     </footer>
-    <script src="/js/index.js"></script>
+    <!-- <script src="/js/index.js" type="module" ></script> -->
+    <script src="/js/articles.js" type="module"></script>
+
 </body>
 
 </html>
